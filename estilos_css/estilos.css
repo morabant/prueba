@@ -1,0 +1,128 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.contenedor {
+  width: 90%;
+  background-color: rgba(253, 236, 170, 0.9);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.cabecera {
+  position: relative;
+  /* background-image: url("../imagenes/morena.jpeg");
+  background-size: 100%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.cabecera img {
+  margin-top: 8px;
+  margin: 0;
+}
+
+.cabecera .contenedor_logo {
+  /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid red; */
+  /*  img {
+      width: 100%;
+      height: 100px;
+    
+    } */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.cabecera .contenedor_logo #logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 2px solid red;
+}
+
+.cabecera .contenedor_logo #logo p {
+  color: #fdecaa;
+  font-size: 1.5em;
+}
+
+.cabecera .contenedor_logo #logo h1 {
+  padding: 20px;
+  font-size: 3em;
+  color: blanchedalmond;
+  text-shadow: 3px 3px 3px black;
+}
+
+.cabecera .contenedor_logo #logo h1 span {
+  color: tomato;
+}
+
+.menu {
+  background: #aaaaaa;
+}
+
+.menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.menu li a {
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  color: black;
+}
+
+.menu li a:hover:not(.activo) {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: whitesmoke;
+}
+
+.menu li a.activo {
+  background-color: red;
+}

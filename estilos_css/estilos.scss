@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.contenedor {
+  width: 90%;
+  background-color: rgba(#fdecaa, 0.9);
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.cabecera {
+  position: relative;
+  //border: 1px solid black;
+
+  /* background-image: url("../imagenes/morena.jpeg");
+  background-size: 100%; */
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  img {
+    margin-top: 8px;
+    //vertical-align: middle;
+    margin: 0;
+  }
+  .contenedor_logo {
+    //background: #cccccc;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid red; */
+
+    /*  img {
+      width: 100%;
+      height: 100px;
+    } */
+    //height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border: 2px solid red;
+      p {
+        //text-align: center;
+        color: #fdecaa;
+        font-size: 1.5em;
+      }
+      h1 {
+        padding: 20px;
+        font-size: 3em;
+        color: blanchedalmond;
+        text-shadow: 3px 3px 3px black;
+        span {
+          color: tomato;
+        }
+      }
+    }
+  }
+}
+.menu {
+  background: #aaaaaa;
+  ul {
+    display: flex;
+    list-style: none;
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+  li {
+    a {
+      text-decoration: none;
+      display: block;
+      padding: 20px;
+      color: black;
+      &:hover:not(.activo) {
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        color: whitesmoke;
+      }
+      &.activo {
+        background-color: red;
+      }
+    }
+  }
+}
